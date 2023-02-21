@@ -7,7 +7,8 @@ import Layout from '../../layouts/blog.astro'
 export async function getStaticPaths() {
   const blogEntries = await getCollection('blog')
   return blogEntries.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
+    params: { slug: entry.slug },
+    props: { entry },
   }))
 }
 
@@ -16,9 +17,10 @@ type Props = {
 }
 
 // 2. When its time to render, you can get the entry directly from the prop
-const { entry } = Astro.props;
+const { entry } = Astro.props
 const { Content } = await entry.render()
 ---
+
 <Layout frontmatter={entry.data}>
   <Content />
 </Layout>
