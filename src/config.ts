@@ -10,10 +10,10 @@ export interface TagType {
 }
 
 export const SiteMetadata = {
-  title: 'Hello Astro',
+  title: 'Best Friend Potrait Art',
   description: 'An Astro starter for corporate/marketing/blog websites.',
   author: {
-    name: 'Chris Tham',
+    name: 'Old Stone',
     twitter: '@chris1tham',
     url: 'https://christham.net',
     email: 'chris@christham.net',
