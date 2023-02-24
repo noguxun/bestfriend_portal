@@ -25,6 +25,8 @@ const { frontmatter } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <SEO frontmatter={frontmatter} />
     <script is:inline>
+      /*
+      // gu: no dark mode
       if (
         localStorage.theme === 'dark' ||
         (!('theme' in localStorage) &&
@@ -34,6 +36,7 @@ const { frontmatter } = Astro.props
       } else {
         document.documentElement.classList.remove('dark')
       }
+      */
     </script>
     <style is:inline>
       [x-cloak] { display: none !important; }
