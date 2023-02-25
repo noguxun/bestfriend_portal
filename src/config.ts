@@ -72,12 +72,15 @@ export const SiteMetadata = {
 
 export const Logo = '../images/svg/astro/logomark-light.svg'
 export const LogoImage = '../images/astro/full-logo-light.png'
-export const FeaturedSVG = '../images/svg/undraw/undraw_design_inspiration.svg'
+// gu: chanee cover photo
+//export const FeaturedSVG = '../images/svg/undraw/undraw_design_inspiration.svg'
+export const FeaturedSVG = '../images/bestfriend/dog_being_drawn.png'
 export const DefaultSVG = '../images/svg/undraw/undraw_my_feed.svg'
 export const DefaultImage = '../images/undraw/undraw_my_feed.png'
 
 export const NavigationLinks = [
-  { name: 'Home', href: '' },
+  { name: 'ホーム', href: '' },
+  { name: '作品例', href: 'products' },
   { name: 'About', href: 'about' },
   { name: 'Contact', href: 'contact' },
   { name: 'Blog', href: 'blog' },

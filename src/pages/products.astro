@@ -1,0 +1,21 @@
+---
+import type { Frontmatter } from '../config'
+import { SiteMetadata } from '../config'
+import Base from '../layouts/base.astro'
+import ProductGallery from '../components/productgallery.astro'
+
+const frontmatter: Frontmatter = {
+  title: "作品例",
+  description: SiteMetadata.description,
+  // coverSVG: '../images/svg/undraw/undraw_design_inspiration.svg',
+  // socialImage: '../images/undraw/undraw_design_inspiration.png',
+  publishDate: SiteMetadata.buildTime,
+}
+---
+
+<Base frontmatter={frontmatter}>
+
+    <ProductGallery
+    />
+
+</Base>
